@@ -29,6 +29,7 @@ COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install lxml_html_clean
 RUN pip install lxml[html_clean]
+RUN pip install json5
 
 FROM gpt-researcher-install AS gpt-researcher
 
