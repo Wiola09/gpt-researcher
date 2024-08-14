@@ -27,6 +27,7 @@ WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install lxml_html_clean
 
 FROM gpt-researcher-install AS gpt-researcher
 
